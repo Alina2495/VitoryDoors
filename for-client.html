@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупателю Vitory Doors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- header top -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  px-0">
+                <a class="navbar-brand d-lg-none" href="#"><img src="img/logo.svg" alt="Vitory Doors"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                    <ul class="navbar-nav align-items-lg-center justify-content-lg-between">
+                        <span class="navbar-text">
+                            <img src="icons/map.svg" class="mr-2">Казань, ул. Чистопольская 49/7
+                        </span>
+                        <span class="navbar-text">
+                            <img src="icons/clock.svg" class="mr-2 align-center">Ежедневно с 10:00 до 20:00
+                        </span>
+                        <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/logo.svg" alt="Vitory Doors"></a>
+                        <span class="navbar-text phone">
+                            <a href="tel:+78432543017">
+                                <img src="icons/phone.svg" alt="phone-icon" class="mr-2">+7 (843) 254 30 17
+                            </a>
+                        </span>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#freeConsultModal">Бесплатная консультация</button>
+                        </form>
+                        <ul class="mt-3 d-lg-none">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Покупателю</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- header top -->
+        <!-- header bottom -->
+        <div class="container-fluid nav-bottom py-3 d-none d-lg-block">
+            <div class="container">
+                <nav class="d-flex justify-content-between list-unstyled">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="icons/menu-2.svg" class="mr-2">Каталог
+                        </a>
+                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Покупателю<img src="icons/arrow.svg" class="ml-2"></a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </nav>
+            </div>
+        </div>
+        <!-- header bottom -->
+    </header>
+    <!-- header -->
+
+    <!-- main content -->
+    <main>
+
+        <div class="main-header">
+            <div class="container">
+                <!-- breadcrumbs -->
+                <nav aria-label="breadcrumb" class="py-4">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Как заказать</li>
+                    </ol>
+                </nav>
+                <h1>Покупателю</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0 nav-bottom2">
+            <ul class="d-none d-lg-flex container nav nav-tabs " id="myTab" role="tablist">
+
+                <!-- howorder tab link -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="howorder-tab" data-toggle="tab" href="#howorder" role="tab" aria-controls="howorder" aria-selected="true">Как заказать</a>
+                </li>
+                <!-- howorder tab link -->
+
+
+                <!-- frozу  tab link -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="froze-tab" data-toggle="tab" href="#froze" role="tab" aria-controls="froze" aria-selected="false">Замер</a>
+                </li>
+                <!-- frozу  tab link -->
+
+                <!-- payment tab link-->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Оплата</a>
+                </li>
+                <!-- payment tab link-->
+
+                <!-- installation tab link-->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="installation-tab" data-toggle="tab" href="#installation" role="tab" aria-controls="installation" aria-selected="false">Установка и доставка</a>
+                </li>
+                <!-- installation tab link -->
+
+
+                <!-- return  tab link-->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="return-tab" data-toggle="tab" href="#return" role="tab" aria-controls="return" aria-selected="false">Возврат и замена</a>
+                </li>
+                <!-- return  tab link-->
+
+                <!-- garanties tab link -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="garanties-tab" data-toggle="tab" href="#garanties" role="tab" aria-controls="garanties" aria-selected="false">Гарантия</a>
+                </li>
+                <!-- garanties tab link -->
+
+
+                <!-- answers tab link -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="answers-tab" data-toggle="tab" href="#answers" role="tab" aria-controls="answers" aria-selected="false">Вопрос - ответ</a>
+                </li>
+                <!-- answers tab link -->
+
+                <!-- wholesalers tab link-->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="wholesalers-tab" data-toggle="tab" href="#wholesalers" role="tab" aria-controls="wholesalers" aria-selected="false">Оптовикам</a>
+                </li>
+                <!-- wholesalers tab link-->
+
+            </ul>
+
+            <div class="tab-content container-fluid px-0">
+
+                <!--1 howorder  tab content-->
+                <div class="tab-pane active container mb-5" id="howorder" role="tabpanel" aria-labelledby="howorder-tab">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <ul class="row align-items-start">
+                                <div class="col-md-6 col-xl-5 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5 mr-xl-4">
+                                    <div class="text-center mr-3"><img src="icons/shop.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Оформить заказ в&nbsp;магазине</h3>
+                                        <p class="mb-0">Посетите салон компании и&nbsp;закажите дверь указав все желаемые требования к&nbsp;изделию и&nbsp;его размеры.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-5 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5 mr-xl-4">
+                                    <div class="text-center mr-3"><img src="icons/clipboard.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Заказать по телефону</h3>
+                                        <p class="mb-0">Для этого позвоните по&nbsp;телефону: &nbsp;+7&nbsp;(843)&nbsp;254-54-54&nbsp; и&nbsp;менеджер по&nbsp;работе с&nbsp;клиентами примет у&nbsp;Вас заказ.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-5 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5 mr-xl-4">
+                                    <div class="text-center mr-3"><img src="icons/computer-screen.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Форма заказа на&nbsp;сайте</h3>
+                                        <p class="mb-0">После получения Вашего заказа менеджер компании свяжется с&nbsp;Вами по&nbsp;телефону для&nbsp;подтверждения заказа.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-5 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5 mr-xl-4">
+                                    <div class="text-center mr-3"><img src="icons/message.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Электронная почта</h3>
+                                        <p class="mb-0">Вы можете отправить нам запрос с&nbsp;вашими пожеланиями на&nbsp;электронную почту: info@vitorydoors.ru.</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <!-- FORM submit application -->
+                        <div class="col-lg-4">
+                            <form action="" class="">
+                                <h3 class="text-center text-md-left mb-2">Оставьте заявку</h3>
+                                <p class="text-center text-md-left">Мы свяжемся с&nbsp;вами в течение 1 часа</p>
+                                <input type="text" name="client-name" id="" placeholder="Как к вам обращаться?">
+                                <input type="tel" name="client-tel" id="" placeholder="+7 (999) 999-99-99">
+                                <button type="submit" class="dark-btn">Оставить заявку</button>
+                                <div class="d-flex mt-3">
+                                    <input type="checkbox" name="" id="check1" class="mt-2 mr-2"><label for="check1">Я согласен с&nbsp;политикой конфиденциальности сайта</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- FORM submit application -->
+                    </div>
+                </div>
+                <!-- howorder  tab content-->
+
+                <!--2 froze  tab content-->
+                <div class="tab-pane container-fluid px-0" id="froze" role="tabpanel" aria-labelledby="froze-tab">
+
+                    <div class="container">
+                        <div class="row mb-lg-2 justify-content-between">
+                            <div class="col-lg-7 mb-4">
+                                <p>Опытный инженер сервиса не&nbsp;просто осуществит замер с&nbsp;учетом всех ваших пожеланий, но&nbsp;и&nbsp;проконсультирует Вас на&nbsp;этапе планирования проемов и&nbsp;систем открывания. Именно такой специалист необходим
+                                    при&nbsp;нестандартных проемах, где&nbsp;важно учесть мельчайшие особенности эксплуатации в&nbsp;дальнейшем. Мы рекомендуем не&nbsp;делать замер самостоятельно, так как даже небольшие погрешности могут привести к&nbsp;нарушениям
+                                    при установке и&nbsp;в&nbsp;дальнейшем быстрой износостойкости изделия.
+                                </p>
+                                <p>Продолжительность службы конструкции и&nbsp;комфортная эксплуатация напрямую зависит от&nbsp;того, как точно и&nbsp;верно проведен замер проема! Мы&nbsp;рекомендуем проводить замер нашими специалистами, во&nbsp;избежании
+                                    дальнейших проблем с&nbsp;установкой.
+                                </p>
+                            </div>
+                            <!-- FORM submit application -->
+                            <div class="col-lg-4 mb-4">
+                                <form action="" class="">
+                                    <h3 class="text-center text-md-left mb-2">Оставьте заявку</h3>
+                                    <p class="text-center text-md-left">Мы свяжемся с&nbsp;вами в&nbsp;течении 1&nbsp;часа</p>
+                                    <input type="text" name="client-name" id="" placeholder="Как к вам обращаться?">
+                                    <input type="tel" name="client-tel" id="" placeholder="+7 (999) 999-99-99">
+                                    <button type="submit" class="dark-btn">Оставить заявку</button>
+                                    <div class="d-flex mt-3">
+                                        <input type="checkbox" name="" id="check2" class="mt-2 mr-2"><label for="check2">Я согласен с&nbsp;политикой конфиденциальности сайта</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- FORM submit application -->
+                        </div>
+                    </div>
+                    <!-- banner 2 free order-->
+                    <div class="container-fluid mp-free-order mt-3 mb-0 ">
+                        <section class="container text-center text-md-left">
+                            <h2 class="mb-3 mb-md-4">Запишитесь на бесплатный выезд замерщика</h2>
+
+                            <p class="mb-3 mb-md-4 col-lg-8 px-0">Оставьте заявку, чтобы записаться на&nbsp;бесплатный замер, на&nbsp;котором вы узнаете: как правильно выбрать дверь, стоимость двери и&nbsp;её установки, а&nbsp;также выберите подходящую отделку двери и&nbsp;узнаете сроки установки.</p>
+
+                            <button class="red-btn">Оставить заявку</button>
+
+                            <img src="img/door2.jpg" alt="" class="d-none d-lg-block">
+                        </section>
+                    </div>
+                    <!-- banner 2 free order-->
+
+                </div>
+                <!-- froze  tab content-->
+
+
+                <!--3 payment tab content-->
+                <div class="tab-pane container mb-5" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                    <p class="mb-4 mb-lg-5">На выбор вам&nbsp;доступны несколько вариантов оплаты при&nbsp;покупке дверей в&nbsp;наших салонах:</p>
+                    <div class="row text-center mb-4 mb-md-5">
+                        <div class="d-flex flex-column col-lg-3 align-items-center mb-3">
+                            <img src="icons/wallet.svg" alt="">
+                            <h3>Оплата наличными</h3>
+                            <p class="col-md-7 col-lg-12">Оплата возможна наличными при&nbsp;посещении салона или&nbsp;получении товара у&nbsp;курьера</p>
+                        </div>
+                        <div class="d-flex flex-column col-lg-3 align-items-center mb-3">
+                            <img src="icons/credit-card.svg" alt="">
+                            <h3>Оплата банковской картой</h3>
+                            <p class="col-md-7 col-lg-12">Оплата возможна при&nbsp;посещении салона или&nbsp;получении товара у&nbsp;курьера</p>
+                        </div>
+                        <div class="d-flex flex-column col-lg-3 align-items-center mb-3">
+                            <img src="icons/bank.svg" alt="">
+                            <h3>В&nbsp;кредит</h3>
+                            <p class="col-md-7 col-lg-12">Возможно оформление покупки в&nbsp;кредит через банк</p>
+                        </div>
+                        <div class="d-flex flex-column col-lg-3 align-items-center mb-3">
+                            <img src="icons/cheque.svg" alt="">
+                            <h3>Оплата по&nbsp;счету</h3>
+                            <p class="col-md-7 col-lg-12">Безналичная оплата по&nbsp;выставленному счету</p>
+                        </div>
+                    </div>
+                    <p>Для&nbsp;более подробной информации о&nbsp;кредите и&nbsp;выставлении счета при&nbsp;безналичном расчете необходимо обратиться к&nbsp;нашим менеджерам. Связаться с&nbsp;нами можно по&nbsp;телефону в&nbsp;Казани <b>+7&nbsp;(843)&nbsp;254-54-54</b>                        или
+                        <!-- modal -->
+                        <a>заполните заявку на&nbsp;сайте.</a>
+                        <!-- modal -->
+                    </p>
+                </div>
+                <!-- payment tab content-->
+
+                <!--4 installation tab content-->
+                <div class="tab-pane container mb-5" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+                    <div class="row mb-md-4 mb-lg-5">
+                        <div class="col-md-6 col-lg-4 d-flex mb-3">
+                            <div class="work-step-number text-center mr-3">1</div>
+                            <div class="d-flex flex-column">
+                                <h3 class="mb-2">Доставка по&nbsp;России</h3>
+                                <p>Доставка в&nbsp;регионы России и&nbsp;страны СНГ осуществляется с&nbsp;помощью транспортных компаний. Наши сотрудники готовы оказать Вам помощь в&nbsp;подборе наиболее удобного варианта доставки. Стоимость услуг транспортной
+                                    компании оплачивается покупателем отдельно.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex mb-3">
+                            <div class="work-step-number text-center mr-3">2</div>
+                            <div class="d-flex flex-column">
+                                <h3 class="mb-2">Доставка в&nbsp;вашем городе</h3>
+                                <p>Вам не придется ездить по&nbsp;всему городу в&nbsp;поисках нужной модели: достаточно просто позвонить или&nbsp;воспользоваться заказом онлайн.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex mb-3">
+                            <div class="work-step-number text-center mr-3">3</div>
+                            <div class="d-flex flex-column">
+                                <h3 class="mb-2">Самовывоз со&nbsp;склада торгового представительства</h3>
+                                <p>Самовывоз бесплатный и&nbsp;возможен в&nbsp;день оформления заказа, при условии наличия дверей на&nbsp;складе торгового представительства. Уточняйте подробности наличия у&nbsp;торговых представителей в&nbsp;вашем городе.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row justify-content-between">
+                        <div class="col-lg-7 mb-4">
+                            <p>Служба доставки привезет ваш заказ в&nbsp;удобное для&nbsp;вас время, поможет распаковать его и&nbsp;осмотреть в&nbsp;случае, если вы производите установку самостоятельно.</p>
+                            <p>При заказе комплекса услуг по доставке и&nbsp;установке – вы получаете готовый продукт. Эта услуга позволит вам сэкономить время, а&nbsp;также избавит от&nbsp;необходимости после доставки проверять привезенный вам груз.</p>
+                            <p>Вы можете заказать установку не&nbsp;только дверей и&nbsp;перегородок, но и&nbsp;комплексного решения (двери, плинтуса, декоративные панели, декоративный брус (рейки)).</p>
+                            <p>На работу наших профессионалов дается гарантия 1&nbsp;год. Просим Вас подготовить место для работы монтажников (не менее 6&nbsp;кв.м.), а&nbsp;также предупреждаем о&nbsp;необходимости накрыть мебель, пол укрывным материалом.
+                                По&nbsp;окончании работ крупный мусор (оберточный материал, обрезки) выносится за&nbsp;дверь, уборка помещений силами монтажников не&nbsp;производится.</p>
+                            <p>Стоимость установки дверей оплачивается монтажнику при&nbsp;заключении договора на&nbsp;установку дверей, в&nbsp;котором составляется смета на&nbsp;производство работ. Более подробная информация о&nbsp;стоимости установки приведена
+                                в&nbsp;таблице ниже.
+                            </p>
+                        </div>
+                        <!-- FORM submit application -->
+                        <div class="col-lg-4">
+                            <form action="" class="">
+                                <h3 class="text-center text-md-left mb-2">Оставьте заявку</h3>
+                                <p class="text-center text-md-left">Мы свяжемся с вами в течение 1 часа</p>
+                                <input type="text" name="client-name" id="" placeholder="Как к вам обращаться?">
+                                <input type="tel" name="client-tel" id="" placeholder="+7 (999) 999-99-99">
+                                <button type="submit" class="dark-btn">Оставить заявку</button>
+                                <div class="d-flex mt-3">
+                                    <input type="checkbox" name="" id="check3" class="mt-2 mr-2"><label for="check3">Я согласен с&nbsp;политикой конфиденциальности сайта</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- FORM submit application -->
+                    </div>
+                </div>
+                <!-- installation tab content-->
+
+
+                <!--5 return tab content -->
+                <div class="tab-pane container mb-5" id="return" role="tabpanel" aria-labelledby="return-tab">
+                    <div class=" row justify-content-between">
+                        <div class="col-lg-7 mb-4">
+                            <p>Компания «Vitory dooгs» осуществляет продажу товаров в&nbsp;соответствии с&nbsp;законом «О&nbsp;защите прав потребителей».</p>
+                        </div>
+                        <!-- FORM submit application -->
+                        <div class="col-lg-4">
+                            <form action="" class="">
+                                <h3 class="text-center text-md-left mb-2">Оставьте заявку</h3>
+                                <p class="text-center text-md-left">Мы свяжемся с вами в течение 1 часа</p>
+                                <input type="text" name="client-name" id="" placeholder="Как к вам обращаться?">
+                                <input type="tel" name="client-tel" id="" placeholder="+7 (999) 999-99-99">
+                                <button type="submit" class="dark-btn">Оставить заявку</button>
+                                <div class="d-flex mt-3">
+                                    <input type="checkbox" name="" id="check4" class="mt-2 mr-2"><label for="check4">Я согласен с&nbsp;политикой конфиденциальности сайта</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- FORM submit application -->
+                    </div>
+                </div>
+                <!-- 5 return tab content -->
+
+                <!--6 garanties tab content -->
+                <div class="tab-pane container mb-5" id="garanties" role="tabpanel" aria-labelledby="garanties-tab">
+                    <div class="col-lg-9">
+                        <div>
+                            <h3>ГАРАНТИЙНЫЕ ОБЯЗАТЕЛЬСТВА</h3>
+                            <p>Все поставляемые изделия проходят испытания на&nbsp;заводе-изготовителе, что&nbsp;позволяет гарантировать качество и&nbsp;надежную эксплуатацию в&nbsp;течение гарантийного срока.</p>
+                            <p>На&nbsp;изделия ТМ&nbsp;Волховец предоставляется гарантия сроком 3&nbsp;года с&nbsp;момента покупки изделия, при&nbsp;условии соблюдения правил использования, монтажа, эксплуатации, транспортировки и&nbsp;хранения.</p>
+                            <p>Гарантия включает все&nbsp;дефекты, которые имеют скрытый заводской брак и&nbsp;распространяется на&nbsp;всю продукцию ТМ&nbsp;Волховец, а&nbsp;именно: дверное полотно, дверная коробка, наличники, доборные элементы, соединительная
+                                планка, притворная планка, порог, карниз, КЭП (комплект элементов портала), комплект раздвижной системы, фурнитуру, приобретенную в&nbsp;компании "Волховец". В&nbsp;случае обнаружения дефектов, связанных с&nbsp;качеством
+                                изделия, необходимо обратиться в&nbsp;магазин, в&nbsp;котором была совершена покупка, и&nbsp;сообщить о&nbsp;выявленном дефекте.</p>
+                        </div>
+                        <div>
+                            <h3>УСЛОВИЯ ГАРАНТИЙНОГО ОБСЛУЖИВАНИЯ:</h3>
+                            <ul class="ul-garanties">
+                                <li>Претензии к&nbsp;качеству изделия могут быть предъявлены в&nbsp;течение гарантийного срока</li>
+                                <li>Изделия, признанные браком обмениваются на&nbsp;новые без&nbsp;дополнительной платы.</li>
+                                <li>Решение о&nbsp;замене изделия принимает завод-изготовитель.</li>
+                                <li>Изделие с&nbsp;браком при этом переходит в&nbsp;собственность завода.</li>
+                                <li>При совершении покупки клиент получает договор (кассовый чек), в&nbsp;котором указывается номенклатура приобретаемых изделий, дата продажи, адрес магазина, в&nbsp;котором совершается покупка и&nbsp;его телефон. В&nbsp;договоре
+                                    обязательно должны быть подписи продавца и&nbsp;покупателя.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>ГАРАНТИЯ НЕ РАСПРОСТРАНЯЕТСЯ НА ДЕФЕКТЫ, ВОЗНИКШИЕ В&nbsp;СЛЕДУЮЩИХ СЛУЧАЯХ:</h3>
+                            <ul class="ul-garanties">
+                                <li>Нарушения требований по монтажу, хранению и&nbsp;эксплуатации изделия</li>
+                                <li>ненадлежащей транспортировки и&nbsp;погрузочно-разгрузочных работ</li>
+                                <li>наличие повреждений, вызванных чрезвычайными ситуациями, природными стихиями и&nbsp;другими форс-мажорными обстоятельствами</li>
+                                <li>наличие механических повреждений в&nbsp;результате удара, падения, взаимодействия с&nbsp;любыми острыми предметами, порчи животными</li>
+                                <li>наличие следов постороннего вмешательства в&nbsp;конструкцию изделия</li>
+                                <li>наличие факта, связанного с&nbsp;разнотональностью и&nbsp;рисунком шпона, массива брак фурнитуры (ручек, петель, замков) и&nbsp;комплектующих, не&nbsp;поставляемых производителем истечение гарантийного срока</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- garanties tab content -->
+
+                <!--7 answers-tab content -->
+                <div class="tab-pane" id="answers" role="tabpanel" aria-labelledby="answers-tab">
+                    <div class="accordion container mb-5" id="answers-accordion">
+
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Сколько будет выполняться по времени заказ?
+                              </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#answers-accordion">
+                                <div class="card-body">
+                                    Срок изготовления продукции зависит от выбранной коллекции. Максимальный срок изготовления 3 недели.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Возможно ли дверь изготовить с одной стороны светлой, а с другой тёмной?
+                              </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#answers-accordion">
+                                <div class="card-body">
+                                    Срок изготовления продукции зависит от выбранной коллекции.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Какая минимальная ширина у двойных дверей?
+                              </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#answers-accordion">
+                                <div class="card-body">
+                                    Срок изготовления продукции зависит от выбранной коллекции.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Из чего состоят двери и для помещений с каким уровнем влажность подходят?
+                              </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#answers-accordion">
+                                <div class="card-body">
+                                    Срок изготовления продукции зависит от выбранной коллекции.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        Какие из моделей можно использовать в качестве откатных дверей?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#answers-accordion">
+                                <div class="card-body">
+                                    Срок изготовления продукции зависит от выбранной коллекции.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                        Можно ли использовать ваши двери для ванной и туалета?
+                              </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#answers-accordion">
+                                <div class="card-body">
+                                    Срок изготовления продукции зависит от выбранной коллекции.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-form container-fluid  d-flex align-items-center justify-content-center">
+                        <form action="" class="col-sm-11 col-md-10 col-lg-6">
+                            <h2 class="mb-3 text-center">Остались вопросы?</h2>
+                            <p class="col-md-10 text-center mx-auto">Заполните форму представленную ниже и&nbsp;наш специалист свяжется с&nbsp;вами для&nbsp;уточнения деталей и&nbsp;решения возникших вопросов.</p>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6 mb-0">
+                                    <input type="text" placeholder="Ваше имя" class="form-control">
+                                </div>
+
+                                <div class="form-group col-lg-6 mb-0">
+                                    <input type="email" placeholder="Электронная почта" class=" form-control">
+                                </div>
+                                <div class="form-group col-12 mb-0">
+                                    <textarea name="" id="" cols="35" class="w-100" placeholder="Ваш вопрос"></textarea>
+                                </div>
+                                <button type="submit" class="red-btn col-md-9 mx-auto">Задать вопрос</button>
+                            </div>
+
+                            <div class="form-group form-check align-items-start pl-0 col-md-9 mx-auto">
+                                <input type="checkbox" class="form-check-input" id="check6">
+                                <label class="form-check-label text-left" for="check6">Я согласен с<a href="#"> политикой конфиденциальности </a>сайта</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- answers tab content -->
+
+
+                <!--8 wholesalers tab content -->
+                <div class="tab-pane container" id="wholesalers" role="tabpanel" aria-labelledby="wholesalers-tab">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p class="mb-4">Выбирая сотрудничество с фабрикой дверей «Vitory doors», вы получаете:</p>
+                            <ul class="row align-items-start pt-lg-1">
+                                <div class="col-md-6 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5">
+                                    <div class="text-center mr-3"><img src="icons/users.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Персональный подход</h3>
+                                        <p class="mb-0">Не стараемся сбыть продукцию, а помогаем выстроить бизнес. Разработаем индивидуальную систему скидок, отсрочек, условий работы.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5">
+                                    <div class="text-center mr-3"><img src="icons/clipboard.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Эффективное взаимодействие</h3>
+                                        <p class="mb-0">Разработаем закупаемый ассортимент с учетом специфики региона. Выполним индивидуальные заказы. Обеспечим минимальные сроки поставки продукции.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5">
+                                    <div class="text-center mr-3"><img src="icons/phone-call.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Сопровождение и поддержка</h3>
+                                        <p class="mb-0">Предоставим на выгодных условиях образцы производимой нами продукции. Осуществим всестороннюю поддержку, проконсультируем, разместим информацию о партнере на сайте фабрики, обеспечим рекламными материалами.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center align-items-lg-start mb-4 mb-sm-5">
+                                    <div class="text-center mr-3"><img src="icons/message.svg" alt=""></div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="mb-2">Стимулированию продаж</h3>
+                                        <p class="mb-0">Проводим обучение специалистов и оказываем консультационную поддержку. Совместно с дилером устраиваем акции по стимулированию продаж. Участвуем в региональных выставках создавая спрос на свою продукцию.</p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- FORM submit application -->
+                        <div class="col-lg-4">
+                            <form action="" class="">
+                                <h3 class="text-center text-md-left mb-2">Оставьте заявку</h3>
+                                <p class="text-center text-md-left">Мы свяжемся с вами в течение 1 часа</p>
+                                <input type="text" name="client-name" id="" placeholder="Как к вам обращаться?">
+                                <input type="tel" name="client-tel" id="" placeholder="+7 (999) 999-99-99">
+                                <button type="submit" class="dark-btn">Оставить заявку</button>
+                                <div class="d-flex mt-3">
+                                    <input type="checkbox" name="" id="check5" class="mt-2 mr-2"><label for="check5">Я согласен с&nbsp;политикой конфиденциальности сайта</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- FORM submit application -->
+                    </div>
+                </div>
+                <!-- wholesalers tab content -->
+            </div>
+
+            <script>
+                $(function() {
+                    $('#myTab li:last-child a').tab('show')
+                })
+            </script>
+        </div>
+    </main>
+    <!-- main -->
+    <!-- footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-between">
+            <div class="d-flex flex-column align-items-center mb-4 align-items-md-start mr-md-4 mr-lg-0">
+                <a href="#"><img src="img/logo-2.svg" alt="Vitory Doors"></a>
+                <p class="footer-desc mt-4 text-center text-md-left">&#64;2020, Фабрика дверей &#171;Vitory&#187; Производство и оптовая продажа межкомнатных дверей по России и&nbsp;странам СНГ. Все права защищены.
+                </p>
+                <div class="social-btns d-flex mt-2">
+                    <a href="#" class="social-btn "><img src="icons/telegram.svg" alt="telegram"></a>
+                    <a href="#" class="social-btn"><img src="icons/whatsapp.svg" alt="whatsapp"></a>
+                    <a href="#" class="social-btn"><img src="icons/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul>
+                    <li class="list-title">Навигация</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul>
+                    <li class="list-title">Каталог</li>
+                    <li><a href="#">Межкомнатные двери</a></li>
+                    <li><a href="#">Дверные арки</a></li>
+                    <li><a href="#">Раздвижные системы</a></li>
+                    <li><a href="#">Входные двери</a></li>
+                    <li><a href="#">Коллекции</a></li>
+                    <li><a href="#">Фурнитура</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul>
+                    <li class="list-title">Покупателю</li>
+                    <li><a href="#">Замер</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Установка и доставка</a></li>
+                    <li><a href="#">Возврат и замена</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Оптовикам</a></li>
+                </ul>
+            </div>
+            <ul class="text-center text-md-left">
+                <li class="list-title d-none d-lg-block">Контакты</li>
+                <li><a class="li-phone" href="tel:+78432543017">+7 (843) 254-54-54</a></li>
+                <li><a href="#" class="li-call">Заказать звонок</a></li>
+                <li><a href="#">Адреса салонов</a></li>
+                <li>
+                    <a href="#"><img src="icons/mail.svg" class="mr-2">vitorydoors@gmail.com</a>
+                </li>
+                <li>
+                    <a><img src="icons/clock-2.svg" class="mr-2 align-baseline">Ежедневно с 10:00 до 22:00</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- modal free consult -->
+    <div class="modal fade" id="freeConsultModal" tabindex="-1" role="dialog" aria-labelledby="freeConsultModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="freeConsultModal">Консультация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте свои контакты и мы свяжемся с вами в ближайшее время</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="client-name" placeholder="Как к вам обращаться?">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="client-tel" placeholder="+7 (999) 999-99-99">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="#">политикой конфиденциальности</a> сайта</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-btn">Оставить заявку</button>
+                    <p class="modal-text">Внимание, услуга бесплатная! Консультация не обязывает вас заказывать услуги и не требует оплаты</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal free consult -->
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+</body>
+
+</html>

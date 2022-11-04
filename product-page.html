@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница товара Vitory Doors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- header top -->
+            <nav class="navbar navbar-expand-lg px-0">
+                <!-- logo -->
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="img/logo-doors.svg" alt="Магазин дверей Vitory Doors">
+                </a>
+                <!-- menu button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFirst" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- скрываемое содержимое -->
+                <div class="collapse navbar-collapse" id="navbarFirst">
+                    <ul class="navbar-nav w-100 mr-auto d-flex align-items-center justify-content-between py-3 py-lg-0">
+                        <span class="navbar-text mr-4">
+                            <img src="icons/r-map.svg" alt="." class="mr-1">Казань, ул. Чистопольская 49/7
+                        </span>
+                        <span class="navbar-text">
+                            <img src="icons/r-clock.svg" alt="." class="mr-1">Ежедневно с&nbsp;10:00 до&nbsp;20:00
+                        </span>
+                        <!-- logo -->
+                        <a class="navbar-brand d-none d-lg-block flex-grow-1 text-center mr-0">
+                            <img src="img/logo-doors.svg" alt="Магазин дверей Vitory Doors">
+                        </a>
+                        <span class="navbar-text mr-4 phone">
+                            <a href="tel:+78432543017" class="sb-f">
+                                <img src="icons/r-tel.svg" alt="." class="mr-1">+7&nbsp;(843)&nbsp;254&nbsp;30&nbsp;17
+                            </a>
+                        </span>
+                        <!-- button modal -->
+                        <button class="red-b-btn" type="button" data-toggle="modal" data-target="#freeConsultModal">Бесплатная консультация</button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid position-relative nav-second-block px-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-md p-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav d-flex justify-content-between w-100 nav-second-ul">
+                            <li class="nav-item active">
+                                <a class="nav-link toggle-menu" href="#" data-menu-id="#drop-menu-cataloge"><img src="icons/menu-2.svg" class="mr-2">Каталог <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle-menu" href="#" data-menu-id="#drop-menu-for-client">Покупателю<img src="icons/arrow.svg" class="ml-2">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Фотогалерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- подменю каталог -->
+            <div class="toggle-menu cataloge-sub-menu py-3" data-menu-id="#drop-menu-cataloge" id="drop-menu-cataloge">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 pr-0">
+                            <nav>
+                                <ul class="cataloge-submenu-child">
+                                    <!-- 1 -->
+                                    <li>
+                                        <a href="" class="toggle-menu" data-menu-id="#drop-menu-doors">Межкомнатные двери</a>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li>
+                                        <a href="#" class="toggle-menu" data-menu-id="#drop-menu-collections">Коллекции</a>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li>
+                                        <a href="#" class="toggle-menu" data-menu-id="#drop-menu-door-arches">Дверные арки</a>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li>
+                                        <a href="#" class="toggle-menu" data-menu-id="#drop-menu-sliding-systems">Раздвижные системы</a>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li>
+                                        <a href="#" class="toggle-menu" data-menu-id="#drop-menu-entrance-doors">Входные двери</a>
+                                    </li>
+                                    <!-- 6 -->
+                                    <li>
+                                        <a href="#" class="toggle-menu" data-menu-id="#drop-menu-furniture">Фурнитура</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- подменю 3 уровня -->
+                        <div class="col-5 p-0" style="background-color: white;">
+
+
+                            <!-- 1 подменю межкомнатные двери -->
+                            <div class="toggle-menu doors-sub-menu py-3 sub-menu-4" data-menu-id="#drop-menu-doors" id="drop-menu-doors">
+                                <h3>Межкомнатные двери</h3>
+                                <div class="row">
+                                    <ul class="col-6 b-f">
+                                        <li><a href="">В комнату</a></li>
+                                        <li><a href="">Для ванной и туалета</a></li>
+                                        <li><a href="">Офисные</a></li>
+                                        <li><a href="">Глухие</a></li>
+                                        <li><a href="">Со стеклом</a></li>
+                                    </ul>
+                                    <ul class="col-6">
+                                        <li><a href="">Двери в наличии</a></li>
+                                        <li><a href="">Двери на заказ</a></li>
+                                        <li><a href="">Нестандартные двери</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 2 подменю коллекции -->
+                            <div class="toggle-menu collections-sub-menu py-3 sub-menu-4" data-menu-id="#drop-menu-collections" id="drop-menu-collections">
+                                <h3>Коллекции</h3>
+                                <div class="row">
+                                    <ul class="col-6 b-f">
+                                        <li><a href="">В комнату</a></li>
+                                        <li><a href="">Для ванной и туалета</a></li>
+                                        <li><a href="">Офисные</a></li>
+                                        <li><a href="">Глухие</a></li>
+                                        <li><a href="">Со стеклом</a></li>
+                                        <li><a href="">Смотреть все</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 3 подменю Дверные арки -->
+                            <div class="toggle-menu door-arches-sub-menu py-3 sub-menu-4" data-menu-id="#drop-menu-door-arches" id="drop-menu-door-arches">
+                                <h3>Дверные арки</h3>
+                                <div class="row">
+                                    <ul class="col-6 b-f">
+                                        <li><a href="">В комнату</a></li>
+                                        <li><a href="">Для ванной и туалета</a></li>
+                                        <li><a href="">Офисные</a></li>
+                                        <li><a href="">Глухие</a></li>
+                                        <li><a href="">Со стеклом</a></li>
+                                        <li><a href="">Смотреть все</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <!-- 4 подменю Раздвижные системы -->
+                            <div class="toggle-menu sliding-systems-sub-menu py-3 sub-menu-4" data-menu-id="#drop-menu-sliding-systems" id="drop-menu-sliding-systems">
+                                <h3>Раздвижные системы</h3>
+                                <div class="row">
+                                    <ul class="col-6 b-f">
+                                        <li><a href="">В комнату</a></li>
+                                        <li><a href="">Для ванной и туалета</a></li>
+                                        <li><a href="">Офисные</a></li>
+                                        <li><a href="">Глухие</a></li>
+                                        <li><a href="">Со стеклом</a></li>
+                                        <li><a href="">Смотреть все</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 5 подменю Входные двери -->
+                            <div class="toggle-menu entrance-doors-sub-menu py-3 sub-menu-4" data-menu-id="#drop-menu-entrance-doors" id="drop-menu-entrance-doors">
+                                <h3>Входные двери</h3>
+                                <div class="row">
+                                    <ul class="col-6 b-f">
+                                        <li><a href="">В комнату</a></li>
+                                        <li><a href="">Для ванной и туалета</a></li>
+                                        <li><a href="">Офисные</a></li>
+                                        <li><a href="">Глухие</a></li>
+                                        <li><a href="">Со стеклом</a></li>
+                                        <li><a href="">Смотреть все</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 6 подменю Фурнитура -->
+                            <div class="toggle-menu furniture-sub-menu py-3 sub-menu-4" data-menu-id="#drop-menu-furniture" id="drop-menu-furniture">
+                                <h3>Фурнитура</h3>
+                                <div class="row">
+                                    <ul class="col-6 b-f">
+                                        <li><a href="">Дверные ручки</a></li>
+                                        <li><a href="">Замки</a></li>
+                                        <li><a href="">Дверные доводчики</a></li>
+                                        <li><a href="">Защелки</a></li>
+                                        <li><a href="">Цилиндровые механизмы</a></li>
+                                        <li><a href="">Петли</a></li>
+                                        <li><a href="">Цифры</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- видео о магазине -->
+                        <div class="col-video col-4 align-self-stretch d-flex align-items-center px-0" style="border: 1px solid #E5E5E5">
+
+                            <div class="col-5">Видео о фабрике Vitory doors</div>
+                            <div class="col-7 video" style="background-image: url('img/menu-video.jpg'); background-size: cover;"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- подменю покупателю -->
+
+
+            <div class="toggle-menu for-client-sub-menu" data-menu-id="#drop-menu-for-client" id="drop-menu-for-client">
+                <div class="container">
+                    <h3>Информация для покупателей</h3>
+                    <div class="row">
+                        <nav class="col-lg-8 flex-row navbar">
+                            <ul class="d-flex navbar-nav flex-row flex-wrap">
+                                <li class="nav-item"><a href="" class="nav-link">Как заказать</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Замер</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Оплата</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Установка и доставка</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Возврат и змена</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Гарантия</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Вопрос - ответ</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Оптовикам</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="col-4">
+                            <p>Видео о фабрике Vitory doors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 1 header -->
+
+    <!-- main content -->
+    <main>
+        <div class="container">
+            <!-- breadcrumbs -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                    <li class="breadcrumb-item"><a href="#">Межкомнатные двери</a></li>
+                    <li class="breadcrumb-item"><a href="#">Aquarelle</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Aq 5-2</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container prod-block">
+            <h1 class="prod-name">Дверь межкомнатная Aq&nbsp;5-2 длинное название</h1>
+            <div class="row">
+                <div class="product-imgs col-lg-4">
+                    <div class="col-4 product-preview-img vertical-slider">
+                        <div><img src="img/similar-product2.png" alt=""></div>
+                        <div><img src="img/similar-product2.png" alt=""></div>
+                        <div><img src="img/similar-product1.png" alt=""></div>
+                    </div>
+                    <div class="col-8 product-active-img"><img src="img/similar-product2.png" alt=""></div>
+                </div>
+                <div class="product-info col-lg-4">
+                    <div class="product-rating">
+                        <div class="prod-rate-contain">
+                            <div class="prod-rate" style="width:50%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="b-f">7 690</span><span class="r-f"> рублей</span>
+                    </div>
+
+                    <div class="d-flex align-items-center prod-info-row">
+                        <div class="prod-amount d-flex align-items-center">
+                            <button class="prod-less">-</button>
+                            <input type="number" name="" id="" value="1" min="1">
+                            <button class="prod-more">+</button>
+                        </div>
+                        <button class="prod-buy-btn w-auto d-block flex-grow-2">Купить товар</button>
+                    </div>
+
+                    <p>Внимание! Фурнитура не входит в стоимость и приобретается отдельно.</p>
+
+                    <div class="product-characteristics row">
+                        <dl class="product-charact prod-char-cat d-flex col-12">
+                            <dt class="prod-char-name mr-2">Категория:</dt>
+                            <dd class="prod-char-value b-f c-1"><a href="#">Aquarelle</a></dd>
+                        </dl>
+                        <dl class="product-charact col-sm-6">
+                            <dt class="prod-char-name">Материал</dt>
+                            <dd class="prod-char-value">Массив сосны + МДФ</dd>
+                        </dl>
+                        <dl class="product-charact col-sm-6">
+                            <dt class="prod-char-name">Тип двери</dt>
+                            <dd class="prod-char-value">Межкомнатные очень длинное описание</dd>
+                        </dl>
+                        <dl class="product-charact col-sm-6">
+                            <dt class="prod-char-name">Модификация</dt>
+                            <dd class="prod-char-value">Глухая и остекленная</dd>
+                        </dl>
+                        <dl class="product-charact col-sm-6">
+                            <dt class="prod-char-name">Остекление</dt>
+                            <dd class="prod-char-value">Без стекла</dd>
+                        </dl>
+                        <button class="see-all-char-btn text-left pl-3">Все характеристики</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- product tabs -->
+            <div class="prod-tab-panel">
+
+                <ul class="nav prod-tab-list" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="prod-desc-tab" data-toggle="pill" href="#tab-prod-desc" role="tab" aria-controls="tab-prod-desc" aria-selected="true">Описание</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="prod-char-tab" data-toggle="pill" href="#tab-prod-char" role="tab" aria-controls="tab-prod-char" aria-selected="false">Характеристики</a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="prod-reviews-tab" data-toggle="pill" href="#tab-prod-reviews" role="tab" aria-controls="tab-prod-reviews" aria-selected="false">Отзывы</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content prod-tab-content" id="pills-tabContent">
+
+
+                    <!-- product description tab content -->
+                    <div class="tab-pane col-lg-7  active show" id="tab-prod-desc" role="tabpanel" aria-labelledby="prod-desc-tab">
+
+                        <p>Изысканные и&nbsp;выразительные линии подчеркивают ее прямолинейный характер. Четкий и&nbsp;ясный образ способен привлечь и&nbsp;удержать самый восторженный и&nbsp;притязательный взгляд. Серия Aquarelle &mdash; это воплощение эстетики
+                            и&nbsp;прямых форм.</p>
+
+                        <ol>
+                            <p><span class="b-f">Базовый комплект</span> состоит из:</p>
+                            <li>1. Короб телескопический 35x75x2100/2400&nbsp;мм.</li>
+                            <li>2. Наличник телескопический 10x80x2200/2400&nbsp;мм.</li>
+                            <li>3. Добор телескопический: 10x90x2070/2400&nbsp;мм; 10x130x2070/2400&nbsp;мм; 10x170x2070/2400&nbsp;мм.</li>
+                            <li>4. Коробочный брус 35x75x2100/2400&nbsp;мм. </li>
+                            <li>5. Пилястра фигурная 10х80х2200/2400&nbsp;мм. </li>
+                            <li>6. Добор: 10x100x2070/2400&nbsp;мм; 10x120x2070/2400&nbsp;мм; 10x150x2070/2400&nbsp;мм. </li>
+                            <li>7. Карниз.</li>
+                        </ol>
+
+                        <dl class="product-charact">
+                            <dt class="prod-char-name b-f">Стандартный размеры полотен: </dt>
+                            <dd class="prod-char-value">600/700/800×2000&nbsp;мм.</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name b-f"> Не стандарт: </dt>
+                            <dd class="prod-char-value">шаг нестандартного размера полотна 50&nbsp;мм, по высоте не более 2300&nbsp;мм, по ширине не&nbsp;более 1000&nbsp;мм. </dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name b-f">Толщина дверного полотна &mdash;</dt>
+                            <dd class="prod-char-value">38&nbsp;мм.</dd>
+                        </dl>
+
+                        <p>Внимание! Фурнитура не входит в&nbsp;стоимость и&nbsp;приобретается отдельно.</p>
+                    </div>
+                    <!-- product description tab content -->
+
+                    <!-- product characteristics tab content -->
+                    <div class="tab-pane" id="tab-prod-char" role="tabpanel" aria-labelledby="prod-char-tab">
+                        <dl class="product-charact">
+                            <dt class="prod-char-name col-sm-4 col-lg-5">Материал</dt>
+                            <dd class="prod-char-value col-sm-8 col-lg-7">Массив сосны + МДФ длинный текст очень юващыоыщузаощоау</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Тип двери</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">Межкомнатные</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Модификация</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">Глухая и остекленная</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Остекление</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">Без стекла</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Стиль</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">Неоклассика, модерн</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Толщина полотна</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">38 мм</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Высота (мм)</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">2000</dd>
+                        </dl>
+                        <dl class="product-charact">
+                            <dt class="prod-char-name  col-sm-4 col-lg-5">Ширина (мм)</dt>
+                            <dd class="prod-char-value col-sm-8  col-lg-7">600/700/800</dd>
+                        </dl>
+
+                    </div>
+                    <!-- product characteristics tab content -->
+
+
+                    <!-- product reviews tab content -->
+                    <div class="tab-pane" id="tab-prod-reviews" role="tabpanel" aria-labelledby="prod-reviews-tab">
+
+                        <button class="red-btn create-review-btn"><img src="icons/review-icon.svg" alt="" class="mr-2">Оставить отзыв</button>
+
+                        <div class="prod-reviews">
+
+                            <div class="review">
+                                <div class="review-header d-flex flex-column flex-sm-row">
+                                    <div class="review-top mr-sm-3 mr-md-4">
+                                        <div class="review-author b-f">Ксения Любералианская Вторая</div>
+                                        <time class="review-date">14.10.2019</time>
+                                    </div>
+                                    <div class="review-prod-rate-contain">
+                                        <div class="review-prod-rate" style="width:80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="review-text">Дверь понравилась всей семье Отличное качество! Дверь понравилась всей семье! Отличное качество!</div>
+                            </div>
+                            <div class="review">
+                                <div class="review-header d-flex flex-column flex-sm-row">
+                                    <div class="review-top mr-sm-3 mr-md-4">
+                                        <div class="review-author b-f">Ксения Любералианская Вторая</div>
+                                        <time class="review-date">24.10.2819</time>
+                                    </div>
+                                    <div class="review-prod-rate-contain">
+                                        <div class="review-prod-rate" style="width:100%;"></div>
+                                    </div>
+                                </div>
+                                <div class="review-text">Дверь понравилась всей семье! Отличное качество!</div>
+                            </div>
+                            <div class="review">
+                                <div class="review-header d-flex flex-column flex-sm-row">
+                                    <div class="review-top mr-sm-3 mr-md-4">
+                                        <div class="review-author b-f">Ксения Любералианская Вторая</div>
+                                        <time class="review-date">14.10.2019</time>
+                                    </div>
+                                    <div class="review-prod-rate-contain">
+                                        <div class="review-prod-rate" style="width:80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="review-text">Дверь понравилась всей семье Отличное качество! Отличное качество!</div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- product reviews tab content -->
+
+                </div>
+            </div>
+            <!-- product tabs -->
+
+        </div>
+        <div class="container">
+            <div class="red-banner c-2">
+                <div class="row justify-content-center justify-content-lg-start text-center text-lg-left">
+                    <h2 class="col-lg-2 col-xl-3 m-0 mr-lg-4 mr-xl-1">Нужна консультация специалиста?
+                    </h2>
+                    <p class="col-sm-10 col-md-7 col-lg-4 col-xl-3 m-0 my-3 my-lg-0">Сомневаетесь, подойдет ли вам этот товар? Оставьте заявку на&nbsp;бесплатный замер или консультацию специалиста!</p>
+                    <div class="col-md-9 col-lg-5 col-xl-4 mt-lg-3 px-2 d-flex flex-column flex-sm-row">
+                        <button class="trans-btn mb-3 mr-sm-3 mb-sm-0 flex-sm-grow-1">Заказать замер</button>
+                        <button class="trans-btn flex-sm-grow-1">Заказать звонок</button>
+                    </div>
+                    <img src="img/woman.png" alt="" class="d-none d-lg-block">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- similar products start -->
+            <div class="similar-products">
+                <h2>Похожие товары</h2>
+                <div class="row">
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center flex-column py-2">
+                        <div class="prod-img-wrap">
+                            <img src="img/similar-product1.png" alt="">
+                        </div>
+                        <div class="prod-name">Дверь межкомнатная Aq&nbsp;5</div>
+                        <a href="" class="b-f">Подробнее</a>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center flex-column py-2">
+                        <div class="prod-img-wrap">
+                            <img src="img/similar-product2.png" alt="">
+                        </div>
+                        <div class="prod-name">Дверь межкомнатная Aq&nbsp;5</div>
+                        <a href="" class="b-f">Подробнее</a>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center flex-column py-2">
+                        <div class="prod-img-wrap">
+                            <img src="img/furniture-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="prod-name">Дверь межкомнатная Aq&nbsp;5</div>
+                            <a href="" class="b-f">Подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- similar products end -->
+        </div>
+
+        <div class="container">
+            <!-- related products сопутствующие товары start -->
+            <div class="related-products">
+                <section class="">
+                    <h2 class="mb-2">Сопутствующие товары</h2>
+                    <div class="py-3 position-relative">
+                        <div class=" swiper-10 position-relative">
+
+                            <div class="swiper-wrapper my-2 position-relative">
+
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/related-products.png" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">Ручка Ruchetti "RAP&nbsp;17&nbsp;SN/CP"</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/furniture-5.jpg" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">Длинное название Door e3j2 djdjdj</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/about-company-img1.jpg" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">Длинное название Door e3j2 djdjdj</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/furniture-4.jpg" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">Длинное название Door e3j2 djdjdj</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/furniture-1.jpg" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">Длинное название Door e3j2 djdjdj</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/furniture-2.jpg" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">djhfjld jlrejgle Door e3j2 djdjdj</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+
+                                    <div class="prod-img-wrap">
+                                        <img src="img/furniture-3.jpg" alt="">
+                                    </div>
+                                    <div class="prod-text-wrap">
+                                        <div class="prod-name">djhfjld jlrejgle Door e3j2 djdjdj</div>
+                                        <div class="prod-price">
+                                            <span class="b-f">1790</span>
+                                            <span>рублей</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+                <!-- related products сопутствующие товары end -->
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+
+    <!-- 15 footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-between">
+            <div class="d-flex flex-column align-items-center mb-4 align-items-md-start mr-md-4 mr-lg-0">
+                <a href="#"><img src="img/logo-2.svg" alt="Vitory Doors"></a>
+                <p class="footer-desc mt-4 text-center text-md-left">&#64;2020, Фабрика дверей &#171;Vitory&#187; Производство и оптовая продажа межкомнатных дверей по России и&nbsp;странам СНГ. Все права защищены.
+                </p>
+                <div class="social-btns d-flex mt-2">
+                    <a href="#" class="social-btn"><img src="icons/telegram.svg" alt="telegram"></a>
+                    <a href="#" class="social-btn"><img src="icons/whatsapp.svg" alt="whatsapp"></a>
+                    <a href="#" class="social-btn"><img src="icons/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul>
+                    <li class="list-title">Навигация</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul>
+                    <li class="list-title">Каталог</li>
+                    <li><a href="#">Межкомнатные двери</a></li>
+                    <li><a href="#">Дверные арки</a></li>
+                    <li><a href="#">Раздвижные системы</a></li>
+                    <li><a href="#">Входные двери</a></li>
+                    <li><a href="#">Коллекции</a></li>
+                    <li><a href="#">Фурнитура</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul>
+                    <li class="list-title">Покупателю</li>
+                    <li><a href="#">Замер</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Установка и доставка</a></li>
+                    <li><a href="#">Возврат и замена</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Оптовикам</a></li>
+                </ul>
+            </div>
+            <ul class="text-center text-md-left">
+                <li class="list-title d-none d-lg-block">Контакты</li>
+                <li><a class="li-phone" href="tel:+78432543017">+7 (843) 254-54-54</a></li>
+                <li><a href="#" class="li-call">Заказать звонок</a></li>
+                <li><a href="#">Адреса салонов</a></li>
+                <li>
+                    <a href="#"><img src="icons/mail.svg" class="mr-2">vitorydoors@gmail.com</a>
+                </li>
+                <li>
+                    <a href="#"><img src="icons/clock-2.svg" class="mr-2 align-baseline">Ежедневно с 10:00 до 22:00</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <!-- 15 footer -->
+
+
+
+    <!-- sticky header on scroll -->
+    <!-- nav top -->
+    <div class="container-fluid position-relative nav px-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg px-0">
+                <!-- логотип -->
+                <a class="navbar-brand" href="#"><img src="img/logo-doors.svg" alt="Магазин дверей Vitory Doors"></a>
+                <!-- логотип -->
+
+                <!-- кнопка гамбургер -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFirst" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <!-- кнопка гамбургер -->
+
+                <!-- скрываемое содержимое -->
+                <div class="collapse navbar-collapse" id="navbarFirst">
+                    <ul class="navbar-nav w-100 mr-auto d-flex align-items-center justify-content-between">
+                        <li class="nav-item active">
+                            <a class="nav-link toggle-menu" href="#" data-menu-id="#drop-menu-cataloge"><img src="icons/menu-2.svg" class="mr-2"><img src="icons/menu-icon.svg" alt=""> Каталог <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link toggle-menu" href="#" data-menu-id="#drop-menu-for-client">Покупателю<img src="icons/arrow-dropdown-icon.svg" class="ml-2">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <a href="tel:+78432543017" class="sb-f phone">
+                    +7&nbsp;(843)&nbsp;254&nbsp;30&nbsp;17
+                </a>
+                        </span>
+                        <button class="dark-b-btn">Бесплатная консультация</button>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="header_sticky">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item scrollto" href="#sec_3">О процедуре</a>
+                    <a class="dropdown-item scrollto" href="#sec_4">Этапы работы</a>
+                    <a class="dropdown-item scrollto" href="#sec_8">Врачи</a>
+                    <a class="dropdown-item scrollto" href="#sec_11">Услуги и цены</a>
+                    <a class="dropdown-item scrollto" href="#sec_13">Контакты</a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu_3">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link scrollto" href="#sec_3">О процедуре</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#sec_4">Этапы работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#sec_8">Врачи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#sec_11">Услуги и цены</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#sec_13">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="f_11 fw_5"><a href="tel:+78432318439">+7 (843) 231-84-39</a></div>
+
+            <div class="d-flex">
+                <a href="#" class="d-block mr-4"><img src="images/icons/inst.png" alt=""></a>
+                <a href="#" class="d-block"><img src="images/icons/vk.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 1 modal free consult-->
+    <div class="modal fade" id="freeConsultModal" tabindex="-1" role="dialog" aria-labelledby="freeConsultModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="freeConsultModal">Консультация</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="sb-f mb-3">Оставьте свои контакты и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+                    <form action="" class="">
+                        <input type="text" name="client-name" id="" class="d-block w-100" placeholder="Как к вам обращаться?" required>
+                        <input type="tel" name="client-tel" id="" class="d-block w-100" placeholder="+7 (999) 999-99-99" required>
+                        <div class="d-flex mt-3">
+                            <input type="checkbox" name="" id="check1" class="mt-2 mr-2"><label for="check1" class="sb-f">Я согласен с&nbsp;<a href="#f">политикой конфиденциальности</a> сайта</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="dark-btn modal-btn w-100 mb-3">Оставить заявку</button>
+                    <p class="modal-text sb-f">Внимание, услуга бесплатная! Консультация не&nbsp;обязывает вас заказывать услуги и&nbsp;не требует оплаты.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1 modal  free consult -->
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="slider.js"></script>
+</body>
+
+</html>
